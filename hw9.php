@@ -5,6 +5,7 @@ try
 {
 	$fp = fopen('file.csv', 'w');
 }
+//better exception handling
 catch (Exception $e)
 {
 	echo 'Caught exception: ' . $e.getMessage() . 'n';
@@ -18,6 +19,7 @@ try
 		fputcsv($fp, $fields);
 	}
 }
+//better exception handling
 catch (Exception $e)
 {
 	echo 'Caught exception: ' . $e.getMessage() . 'n';
